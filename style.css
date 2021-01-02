@@ -1,0 +1,83 @@
+#grid{
+  width:1500px;
+  display:grid;
+  grid-gap:1px;
+  grid-template-columns:auto auto auto;
+}
+
+#grid .schedule{
+  width:360px;
+  height:420px;
+  border:1px solid black;
+}
+
+#grid .calendar{
+  width:500px;
+  height:420px;
+  border:1px solid black;
+}
+#grid .Today-Do{
+  width:600px;
+  height:420px;
+  border:1px solid black;
+}
+
+h1{
+  text-align:center;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+a {
+     text-decoration:none;
+}
+
+.Today-Do input{
+  margin-left:5px;
+  margin-top: 5px;
+  width:400px;
+  height:25px;
+  font-size:20px;
+}
+
+#ask{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width:850px){
+  #grid{
+    display: block;
+    width:auto;
+  }
+
+  #grid .schedule{
+    width:auto;
+    height:420px;
+    border:1px solid black;
+  }
+
+  #grid .calendar{
+    width:auto;
+    height:420px;
+    border:1px solid black;
+  }
+
+  #grid .Today-Do{
+    width:auto;
+    height:420px;
+    border:1px solid black;
+  }
+
+  .Today-Do input{
+    margin-left:2px;
+    width:200px;
+  }
+
+  h1{
+    text-align: left;
+    border-bottom: none;
+  }
+
+}
