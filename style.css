@@ -1,8 +1,9 @@
 #grid{
-  width:1500px;
+  width:1800px;
   display:grid;
   grid-gap:1px;
-  grid-template-columns:auto auto auto;
+  grid-template-columns:auto auto auto auto;
+  margin-left: 40px;
 }
 
 #grid .schedule{
@@ -22,6 +23,11 @@
   border:1px solid black;
 }
 
+#grid #frmNIDLogin{
+  border:black 1px solid;
+  height:420px;
+}
+
 h1{
   text-align:center;
   border-bottom: 1px solid black;
@@ -38,6 +44,10 @@ a {
   width:400px;
   height:25px;
   font-size:20px;
+}
+
+.input_text{
+  padding-bottom: 5px;
 }
 
 #ask{
@@ -78,6 +88,10 @@ a {
   h1{
     text-align: left;
     border-bottom: none;
+  }
+
+  #grid #frmNIDLogin{
+    display:none;
   }
 
 }
