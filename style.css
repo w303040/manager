@@ -38,12 +38,25 @@ a {
      text-decoration:none;
 }
 
+.Today-Do{
+  display:grid;
+  grid-gap:1px;
+  grid-template-columns:400px 100px;
+}
+
 .Today-Do input{
   margin-left:5px;
   margin-top: 5px;
   width:400px;
   height:25px;
   font-size:20px;
+}
+
+.Today-Do button{
+  margin-left:13px;
+  margin-top: 7px;
+  width:45px;
+  height:25px;
 }
 
 .input_text{

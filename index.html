@@ -9,13 +9,31 @@
   </head>
   <body>
     <h1><a href="index.html">My Manager</a></h1>
+    <script>
+      var semester=[
+        "1학기","2학기","3학기","4학기","5학기","6학기","7학기","8학기","9학기"
+      ]
+    </script>
     <div id="grid">
       <div class="schedule">
+        <label>학기</label>
+        <select name="semester">
+          <script>
+            var i = 0
+            while(i < semester.length){
+              document.write('<option>'+semester[i]+'</option>')
+              i = i + 1;
+            }
+          </script>
+        </select>
       </div>
       <div class="calendar">
       </div>
       <div class="Today-Do">
         <input type="text" name=""Today-Do"" value="" size="" maxlength="">
+        <div>
+          <button type="submit">등록</button>
+        </div>
       </div>
       <div>
         <form id="frmNIDLogin" name="frmNIDLogin" method="post" action="">
@@ -25,7 +43,7 @@
           </div>
           <div class="input_text">
             <label for="loginPW" class="screen_out">비밀번호</label>
-            <input type="text" id="loginPW" name="loginPW" placeholder="PW" >
+            <input type="password" id="loginPW" name="loginPW" placeholder="PW" >
           </div>
           <div>
             <button type="submit">로그인</button>
