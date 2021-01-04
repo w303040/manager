@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="학업과 일정 관리 매니저">
+    <title>학업과 일정 관리 매니저</title>
+    <link rel="icon" type="image/png" href="favicon-16x16.png">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="main_header wrapper">
+      <h1 class="main_title"><a href="index.html">My Schedule Manager</a></h1>
+      <nav>
+        <script>
+          var navlist = [
+            'academic schedule','calendar','today-do'
+          ]
+        </script>
+        <ul class="main_nav">
+          <script>
+            var i = 0
+            while(i < navlist.length){
+              document.write('<li><a href="'+navlist[i]+'.html">'+navlist[i]+'</a></li>')
+              i = i + 1;
+            }
+          </script>
+        </ul>
+      </nav>
+    </header>

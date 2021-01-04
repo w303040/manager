@@ -1,110 +1,88 @@
-#grid{
-  width:1800px;
-  display:grid;
-  grid-gap:1px;
-  grid-template-columns:auto auto auto auto;
-  margin-left: 40px;
+@@charset "UTF-8";
+
+/*
+----------------------------*/
+html {
+  font-size: 100%;
+}
+body {
+  line-height: 1.7;
+  background-color: beige;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
 }
 
-#grid .schedule{
-  width:360px;
-  height:420px;
-  border:1px solid black;
+/* header
+-----------------------------*/
+.main_header{
+  display: flex;
+  justify-content: space-between;
 }
-
-#grid .calendar{
-  width:500px;
-  height:420px;
-  border:1px solid black;
+.main_title a{
+  color: #432;
 }
-#grid .Today-Do{
-  width:600px;
-  height:420px;
-  border:1px solid black;
+.main_title a:hover{
+  color: #0bd;
 }
-
-#grid #frmNIDLogin{
-  border:black 1px solid;
-  height:420px;
+.main_nav{
+  display: flex;
+  text-transform: uppercase;
+  list-style: none;
+  margin-top: 34px;
 }
-
-h1{
-  text-align:center;
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
+.main_nav li{
+  margin-left: 36px;
 }
-
-a {
-     text-decoration:none;
+.main_nav a{
+  color: #432;
 }
-
-.Today-Do{
-  display:grid;
-  grid-gap:1px;
-  grid-template-columns:400px 100px;
+.main_nav a:hover{
+  color: #0bd;
 }
-
-.Today-Do input{
-  margin-left:5px;
-  margin-top: 5px;
-  width:400px;
-  height:25px;
-  font-size:20px;
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
 }
-
-.Today-Do button{
-  margin-left:13px;
-  margin-top: 7px;
-  width:45px;
-  height:25px;
+/*home
+------------------------------*/
+.home{
+  border: 1px pink solid;
 }
-
-.input_text{
-  padding-bottom: 5px;
+.home_content{
+  text-align: center;
+  width: 850px;
+  height: 500px;
+  border: 1px black solid;
+  margin-bottom: 27px;
 }
-
-#ask{
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.home_content p{
+  margin-top: 200px;
 }
-
-@media (max-width:850px){
-  #grid{
-    display: block;
-    width:auto;
-  }
-
-  #grid .schedule{
-    width:auto;
-    height:420px;
-    border:1px solid black;
-  }
-
-  #grid .calendar{
-    width:auto;
-    height:420px;
-    border:1px solid black;
-  }
-
-  #grid .Today-Do{
-    width:auto;
-    height:420px;
-    border:1px solid black;
-  }
-
-  .Today-Do input{
-    margin-left:2px;
-    width:200px;
-  }
-
-  h1{
-    text-align: left;
-    border-bottom: none;
-  }
-
-  #grid #frmNIDLogin{
-    display:none;
-  }
-
+.categories h3{
+  border-bottom: 3px pink solid;
+}
+.categories_list a{
+  color: #432;
+}
+.categories_list a:hover{
+  color: #0bd;
+}
+.categories_list li{
+  border-bottom: 1px #ddd solid;
+}
+.a_and_c{
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 50px;
+}
+article{
+  width: 85%;
+}
+aside{
+  width: 15%
 }
