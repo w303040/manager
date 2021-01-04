@@ -1426,9 +1426,3 @@ A VERTICAL event
   .fc-theme-bootstrap a:not([href]) {
     color: inherit; /* natural color for navlinks */
   }
-
-#calendar{
-  width: 1100px;
-  height: 800px;
-  margin-left: 400px;
-}

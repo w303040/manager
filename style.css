@@ -89,3 +89,14 @@ aside{
 .todo_input{
   width: 800px;
 }
+.ask{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.ask a{
+  color: #432;
+}
+.ask a:hover{
+  color: #0bd;
+}
