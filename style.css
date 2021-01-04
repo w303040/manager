@@ -109,8 +109,9 @@ aside{
   .main_title{
     font-size: 20px;
   }
-  .main_nav{
-    font-size: 13px;
+  .main_nav li{
+    width: 65px;
+    font-size: 12px;
   }
   .main_header{
     flex-direction: column;
@@ -138,11 +139,12 @@ aside{
     margin-top: 40px;
   }
   .todat_do_text{
-    padding-left: 15px;
+    padding-left: 2px;
     display: flex;
   }
   .todat_do_text label{
-    font-size: 15px;
+    width: 30px;
+    font-size: 12px;
   }
   .todo_input{
     width: 300px;
