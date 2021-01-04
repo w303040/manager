@@ -55,7 +55,7 @@ img{
 }
 .home_content{
   text-align: center;
-  width: 850px;
+  width: auto;
   height: 500px;
   border: 1px black solid;
   margin-bottom: 27px;
@@ -85,4 +85,7 @@ article{
 }
 aside{
   width: 15%
+}
+.todo_input{
+  width: 800px;
 }
