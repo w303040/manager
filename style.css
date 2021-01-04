@@ -100,3 +100,14 @@ aside{
 .ask a:hover{
   color: #0bd;
 }
+@media(max-width:800px) {
+  .a_and_c{
+    display: block;
+  }
+  .categories_list {
+    display: flex;
+  }
+  .categories_list li{
+    margin-right: 100px;
+  }
+}
