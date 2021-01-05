@@ -9,6 +9,20 @@
     <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <link href='main.css' rel='stylesheet'>
+    <!-- js -->
+    <script src='main.js'></script>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth'
+        });
+        calendar.render();
+      });
+
+    </script>
   </head>
   <body>
     <header class="main_header wrapper">
@@ -30,53 +44,71 @@
         </ul>
       </nav>
     </header>
-    <div class="a_and_c wrapper">
-      <article>
-        <div class="home wrapper">
-          <h2>Academic Schedule</h2>
-          <div class="home_select">
-            <label for="학기_선택">학기 선택</label>
-            <select class="semester_selector" name="학기_선택">
-              <script>
-                var semester_selector = [
-                  '----------------','1학년 1학기','1학년 2학기','2학년 1학기','2학년 2학기','3학년 1학기','3학년 2학기','4학년 1학기','4학년 2학기'
-                ]
-              </script>
-              <script>
-                var i = 0
-                while(i < semester_selector.length){
-                  document.write('<option>'+semester_selector[i]+'</option>')
-                  i = i + 1;
-                }
-              </script>
-            </select>
-            <input type="submit" value="선택">
+    <main>
+      <div class="home wrapper">
+        <div class="to_a_and_c">
+          <div class="to_academic_schedule">
+            <h3>Academic Schedule</h3>
+            <table class="wrapper">
+                <tr>
+                  <script>
+                    var week = [
+                      '시간/요일','월','화','수','목','금'
+                    ]
+                  </script>
+                  <script>
+                    var i = 0
+                    while(i < week.length){
+                      document.write('<th>'+week[i]+'</th>')
+                      i = i + 1;
+                    }
+                  </script>
+                </tr>
+                <tr>
+                  <td>1교시</td>
+                </tr>
+                <tr>
+                  <td>1교시</td>
+                </tr>
+                <tr>
+                  <td>1교시</td>
+                </tr>
+                <tr>
+                  <td>1교시</td>
+                </tr>
+                <tr>
+                  <td>1교시</td>
+                </tr>
+                <tr>
+                  <td>1교시</td>
+                </tr>
+                <tr>
+                  <td>1교시</td>
+                </tr>
+                <tr>
+                  <td>1교시</td>
+                </tr>
+                <tr>
+                  <td>1교시</td>
+                </tr>
+              </table>
           </div>
-          <div class="home_content">
-            <p>학기를 선택해 주세요.</p>
+          <div class="to_calendar">
+            <h3>Calendar</h3>
+            <div id='calendar' class="wrapper"></div>
           </div>
         </div>
-      </article>
-      <aside class="categories">
-        <h3>카테고리</h3>
-        <script>
-          var categories = [
-            '시간표','학점','수업별 메모'
-          ]
-        </script>
-        <ul class="categories_list">
-          <script>
-            var i = 0
-            while(i < categories.length){
-              document.write('<li><a href="'+categories[i]+'.html">'+categories[i]+'</a></li>')
-              i = i + 1;
-            }
-          </script>
-        </ul>
-      <aside>
-    </div>
-    <div class="ask wrapper">
-      <a href="mailto:w303040@naver.com"><i class="fas fa-question-circle fa-2x"></i></a>
-    </div>
+        <div class="to_today-do">
+          <h3>Today-Do</h3>
+          <input type="button" value="+" name="plus_text">
+          <label for="plus_text">추가</label>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="ask wrapper">
+        <a href="mailto:w303040@naver.com"><i class="fas fa-question-circle fa-2x"></i></a>
+      </div>
+    </footer>
   </body>
 </html>

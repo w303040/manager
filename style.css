@@ -5,13 +5,16 @@
 html {
   font-size: 100%;
 }
+
 body {
   line-height: 1.7;
   background-color: beige;
 }
+
 a{
   text-decoration: none;
 }
+
 img{
   max-width: 100%;
 }
@@ -22,76 +25,139 @@ img{
   display: flex;
   justify-content: space-between;
 }
+
 .main_title a{
   color: #432;
 }
+
 .main_title a:hover{
   color: #0bd;
 }
+
 .main_nav{
   display: flex;
   text-transform: uppercase;
   list-style: none;
   margin-top: 34px;
 }
+
 .main_nav li{
   margin-left: 36px;
 }
+
 .main_nav a{
   color: #432;
 }
+
 .main_nav a:hover{
   color: #0bd;
 }
+
 .wrapper{
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 4%;
 }
+
 /*home
 ------------------------------*/
 .home{
   border: 1px pink solid;
 }
+
 .home_content{
   text-align: center;
   width: auto;
   height: 500px;
   border: 1px black solid;
   margin-bottom: 27px;
+  margin-top: 27px;
 }
+
 .home_content p{
   margin-top: 200px;
 }
+
 .categories h3{
   border-bottom: 3px pink solid;
 }
+
 .categories_list a{
   color: #432;
 }
+
 .categories_list a:hover{
   color: #0bd;
 }
+
 .categories_list li{
   border-bottom: 1px #ddd solid;
 }
+
 .a_and_c{
   display: flex;
   justify-content:space-between;
   margin-bottom: 50px;
 }
+
 article{
   width: 85%;
 }
+
 aside{
   width: 15%
 }
-.todo_input{
-  width: 800px;
+
+.today{
+  text-align: left;
 }
-.todat_do_text{
-  margin-top: 15px;
+
+.home_content .text p{
+  margin-top: 10px;
 }
+
+.to_academic_schedule{
+  border: 1px black solid;
+  text-align: center;
+  border: 1px black solid;
+  width: 500px;
+  height: 500px;
+}
+
+.to_academic_schedule table{
+  margin-top: 27px;
+  border: 1px black solid;
+  width: 450px;
+  height: 400px;
+  padding: 0;
+}
+
+.to_calendar{
+  border: 1px black solid;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+
+.to_today-do{
+  border: 1px black solid;
+  width: 480px;
+  height: 500px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.to_today-do h3{
+  text-align: center;
+}
+
+.to_a_and_c{
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
 /* footer
 -------------------------*/
 .ask{
@@ -99,58 +165,102 @@ aside{
   bottom: 0;
   left: 0;
 }
+
 .ask a{
   color: #432;
 }
+
 .ask a:hover{
   color: #0bd;
 }
+
+/*
+--------------------------------*/
 @media(max-width:800px) {
   .main_title{
     font-size: 20px;
   }
+
   .main_nav li{
     width: 65px;
     font-size: 12px;
   }
+
   .main_header{
     flex-direction: column;
     align-items: center;
   }
+
   .a_and_c{
     flex-direction: column;
     align-items: center;
   }
+
   .categories{
     width: 150px;
   }
+
   .categories h3{
     text-align: center;
   }
+
   .home h2{
     text-align: center;
     font-size: 20px;
   }
+
   .home_content{
     height: 300px;
     margin-top: 27px;
   }
+
   .home_content p{
     margin-top: 40px;
   }
+
   .todat_do_text{
     padding-left: 2px;
     display: flex;
   }
+
   .todat_do_text label{
     width: 30px;
     font-size: 12px;
   }
+
   .todo_input{
     width: 300px;
     height: 20px;
   }
+
   .submit{
     height: 25px;
   }
+
+  .to_a_and_c{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+ .to_academic_schedule{
+   width: 300px;
+   height: 400px;
+ }
+
+ .to_academic_schedule table{
+   width: 280px;
+   height: 280px;
+ }
+
+ .to_calendar{
+   width: 300px;
+   height: 400px;
+   margin-bottom: 0;
+ }
+
+ .to_today-do{
+   width: 280px;
+   height: 400px;
+   margin-left: 16px;
 }
