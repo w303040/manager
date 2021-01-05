@@ -273,9 +273,9 @@ audio{
   }
 
  .to_today-do{
-   width: 280px;
+   width: 300px;
    height: 400px;
-   margin-left: 16px;
+   padding: 0;
  }
 
  .to_academic_schedule table tr,th,td{
@@ -283,7 +283,7 @@ audio{
  }
 
  audio{
-   margin-left:0;
+   margin-left: 0;
  }
-  
+
 }
