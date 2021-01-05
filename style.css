@@ -132,6 +132,15 @@ aside{
   padding: 0;
 }
 
+.to_academic_schedule table tr,th,td{
+    border: 1px black solid;
+}
+
+.to_academic_schedule table td{
+  width: 80px;
+  text-align: left;
+}
+
 .to_calendar{
   border: 1px black solid;
   width: 500px;
@@ -156,6 +165,10 @@ aside{
   justify-content:space-between;
   margin-bottom: 50px;
   margin-top: 20px;
+}
+
+audio{
+  margin-left: 200px;
 }
 
 /* footer
@@ -246,21 +259,27 @@ aside{
  .to_academic_schedule{
    width: 300px;
    height: 400px;
- }
+  }
 
  .to_academic_schedule table{
    width: 280px;
    height: 280px;
- }
+  }
 
  .to_calendar{
    width: 300px;
    height: 400px;
    margin-bottom: 0;
- }
+  }
 
  .to_today-do{
    width: 280px;
    height: 400px;
    margin-left: 16px;
+ }
+
+ .to_academic_schedule table tr,th,td{
+   font-size: 10px;
+ }
+
 }
