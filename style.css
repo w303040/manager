@@ -273,9 +273,16 @@ audio{
   }
 
  .to_today-do{
-   width: 300px;
+   width: 280px;
    height: 400px;
-   padding: 0;
+   padding-left: 20px;
+ }
+
+ .home{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 0;
  }
 
  .to_academic_schedule table tr,th,td{
