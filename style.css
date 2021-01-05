@@ -282,4 +282,8 @@ audio{
    font-size: 10px;
  }
 
+ audio{
+   margin-left:0;
+ }
+  
 }
